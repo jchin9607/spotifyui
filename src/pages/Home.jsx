@@ -53,7 +53,7 @@ const Home = () => {
               </div>
             )}
           </div>
-          <div className="w-full h-screen flex flex-col items-center justify-center relative z-[0]">
+{/*           <div className="w-full h-screen flex flex-col items-center justify-center relative z-[0]"> */}
             {/* <img
               src={display.image}
               className="w-[300px] h-[300px] rounded-md object-cover drop-shadow-sm"
@@ -61,7 +61,7 @@ const Home = () => {
             />
             <p>{display.name}</p>
             <p>{display.artist}</p> */}
-            <h2 className="drop-shadow-md">
+            <h2 className="drop-shadow-md absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[0]">
               Made by{" "}
               <a
                 href="https://jchin9607.github.io/portfolio"
@@ -71,7 +71,7 @@ const Home = () => {
                 Lucas C. 🌃
               </a>
             </h2>
-          </div>
+{/*           </div> */}
           <div className="w-full fixed bottom-0">
             <Player accessToken={accessToken} trackUri={uri ? uri : null} />
           </div>
