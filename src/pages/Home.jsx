@@ -44,7 +44,7 @@ const Home = () => {
               className="w-[300px] h-[20px] outline border-black rounded-md m-2 px-5 py-2"
             />
             {search !== "" && (
-              <div className="w-full overflow-auto h-[500px] max-w-[600px] bg-white z-2">
+              <div className="w-full overflow-auto h-[500px] max-w-[600px] bg-white z-[2]">
                 <Search
                   search={search}
                   accessToken={accessToken}
@@ -61,7 +61,7 @@ const Home = () => {
             />
             <p>{display.name}</p>
             <p>{display.artist}</p> */}
-            <h2 className="drop-shadow-md z-[-1]">
+            <h2 className="drop-shadow-md z-[0]">
               Made by{" "}
               <a
                 href="https://jchin9607.github.io/portfolio"
