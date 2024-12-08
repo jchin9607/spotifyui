@@ -35,7 +35,7 @@ const Home = () => {
     <div>
       {accessToken && (
         <div className="w-full h-screen ">
-          <div className="flex flex-col items-center justify-center fixed top-0 left-0 w-full">
+          <div className="flex flex-col items-center justify-center fixed top-0 left-0 w-full z-[2]">
             <input
               type="text"
               onChange={(e) => setSearch(e.target.value)}
@@ -44,7 +44,7 @@ const Home = () => {
               className="w-[300px] h-[20px] outline border-black rounded-md m-2 px-5 py-2"
             />
             {search !== "" && (
-              <div className="w-full overflow-auto h-[500px] max-w-[600px] bg-white z-[2] relative">
+              <div className="w-full overflow-auto h-[500px] max-w-[600px] bg-white z-[2]">
                 <Search
                   search={search}
                   accessToken={accessToken}
