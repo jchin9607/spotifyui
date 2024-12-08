@@ -44,7 +44,7 @@ const Home = () => {
               className="w-[300px] h-[20px] outline border-black rounded-md m-2 px-5 py-2"
             />
             {search !== "" && (
-              <div className="w-full overflow-auto h-[500px] max-w-[600px] bg-white z-[2]">
+              <div className="w-full overflow-auto h-[500px] max-w-[600px] bg-white z-[2] relative">
                 <Search
                   search={search}
                   accessToken={accessToken}
@@ -53,7 +53,7 @@ const Home = () => {
               </div>
             )}
           </div>
-          <div className="w-full h-screen flex flex-col items-center justify-center">
+          <div className="w-full h-screen flex flex-col items-center justify-center relative z-[0]">
             {/* <img
               src={display.image}
               className="w-[300px] h-[300px] rounded-md object-cover drop-shadow-sm"
@@ -61,7 +61,7 @@ const Home = () => {
             />
             <p>{display.name}</p>
             <p>{display.artist}</p> */}
-            <h2 className="drop-shadow-md z-[0]">
+            <h2 className="drop-shadow-md">
               Made by{" "}
               <a
                 href="https://jchin9607.github.io/portfolio"
