@@ -43,7 +43,7 @@ const Home = () => {
               placeholder="Search for a song"
               className="w-[300px] h-[20px] outline border-black rounded-md m-2 px-5 py-2"
             />
-            {search && (
+            {search !== "" && (
               <div className="w-full overflow-auto h-[500px] max-w-[600px] bg-white z-2">
                 <Search
                   search={search}
