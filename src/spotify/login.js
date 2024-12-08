@@ -1,6 +1,6 @@
 const login = () => {
   const clientId = import.meta.env.VITE_SPOTIFY_API_ID;
-  const redirectUri = "http://localhost:5173/home";
+  const redirectUri = "https://fukumusic.vercel.app/home";
   const responseType = "code";
   const scopes =
     "streaming user-read-email user-read-private user-read-playback-state user-modify-playback-state user-library-read user-library-modify";
