@@ -20,7 +20,7 @@ const clientcred = async (code) => {
   const data = {
     grant_type: "authorization_code",
     code: code,
-    redirect_uri: "http://localhost:5173/home",
+    redirect_uri: "https://fukumusic.vercel.app/home",
   };
   try {
     const response = await axios.post(tokenUrl, qs.stringify(data), headers);
